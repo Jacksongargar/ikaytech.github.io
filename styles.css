@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 20px;
+    background-color: #333;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5em;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.1em;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f1c40f;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/images/hero.jpg') no-repeat center center/cover;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    overflow: hidden;
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4em;
+    animation: fadeInUp 2s ease-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    animation: fadeInUp 2s ease-out 0.5s;
+}
+
+.hero .btn {
+    font-size: 1.2em;
+    padding: 10px 30px;
+    background-color: #f1c40f;
+    border: none;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+/* Service Section */
+#services {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background-color: #f1f1f1;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1em;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Animation for Hero Text */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
